@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissor</p>
+    <div>
+      <button class="rock move-btn" onclick="playgame('rock')">
+        <img
+          src="/with js/rock-paper-scissor/rock-emoji.png"
+          alt=""
+          class="r-c-p-img"
+        />
+      </button>
+      <button class="scissor move-btn" onclick="playgame('scissors')">
+        <img
+          src="/with js/rock-paper-scissor/scissors-emoji.png"
+          alt=""
+          class="r-c-p-img"
+        />
+      </button>
+      <button class="paper move-btn" onclick="playgame('paper')">
+        <img
+          src="/with js/rock-paper-scissor/paper-emoji.png"
+          alt=""
+          class="r-c-p-img"
+        />
+      </button>
+
+      <p class="result">hello</p>
+      <p class="move"></p>
+      <p class="score"></p>
+
+      <button class="reset" onclick="resetscore()">reset score</button>
+      <button class="autoplay-btn" onclick="autoplay()">autoplay</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
