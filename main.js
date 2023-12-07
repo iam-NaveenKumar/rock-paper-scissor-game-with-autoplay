@@ -152,3 +152,17 @@ function updatescore() {
     ".score"
   ).innerHTML = `wins : ${score.win} | lose : ${score.lose} | tie : ${score.tie}`;
 }
+var audio = document.getElementById("myAudio");
+
+// audio
+
+function toggleSong() {
+  if (audio.paused) {
+    // If the audio is paused, play it
+    audio.play();
+  } else {
+    // If the audio is playing, pause it
+    audio.pause();
+  }
+}
+
