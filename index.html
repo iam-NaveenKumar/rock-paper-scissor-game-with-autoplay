@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom</title>
     <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/34de377d53.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <p class="title">Rock Paper Scissor</p>
-    <div>
+    <div class="main">
       <button class="rock move-btn" id="rock">
         <img src="rock-emoji.png" alt="" class="r-c-p-img" />
       </button>
@@ -25,6 +29,15 @@
 
       <button class="reset" onclick="resetscore()">reset score</button>
       <button class="autoplay-btn" onclick="autoplay()">autoplay</button>
+    </div>
+    <div class="btn">
+      <button onclick="toggleSong()">
+        <i class="fa-solid fa-music">
+          <audio id="myAudio" autoplay loop>
+            <source src="hip-hop-rock-beats-118000.mp3" />
+          </audio>
+        </i>
+      </button>
     </div>
 
     <script src="main.js"></script>
