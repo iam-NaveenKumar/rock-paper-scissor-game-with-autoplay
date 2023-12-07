@@ -5,7 +5,10 @@
 }
 body {
   min-height: 100vh;
-  background-color: rgb(0, 0, 73);
+  background-image: url(https://images.unsplash.com/photo-1542549237432-a176cb9d5e5e?q=80&w=1907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: white;
   display: flex;
   align-items: center;
@@ -17,20 +20,53 @@ body {
   top: 10px;
   text-align: center;
   font-size: 50px;
-  text-shadow: 0px 0px 30px white;
-  color: black;
+  text-shadow: 0px 0px 50px black;
+  color: white;
+  font-weight: 700;
 }
 .r-c-p-img {
   height: 50px;
   width: 50px;
 }
 
-div {
+.main {
   position: relative;
   height: 500px;
   width: 600px;
   border-radius: 30px;
-  box-shadow: 0px 0px 20px whitesmoke;
+  box-shadow: 0px 0px 10px whitesmoke;
+}
+.btn {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  top: 30px;
+  right: 20px;
+  border-radius: 30%;
+}
+.btn button {
+  border: none;
+  background-color: transparent;
+}
+.fa-music {
+  font-size: 40px;
+  transform: translate(6px, 6px);
+  animation: dance 1.5s linear infinite;
+}
+@keyframes dance {
+  10% {
+    transform: translatex(5px);
+  }
+  50% {
+    transform: translatey(6px);
+  }
+  75% {
+    transform: translatex(3px);
+  }
+  90% {
+    transform: translatey(7px);
+  }
 }
 
 .move-btn {
@@ -42,15 +78,19 @@ div {
 }
 
 .move-btn:hover {
-  background-color: white;
-  border: 3px solid red;
   cursor: pointer;
+  border: 3px solid rgba(246, 93, 93, 0);
+  transition: border 1.5s;
+}
+.move-btn:hover img {
+  transform: scale(1.5);
+  transition: 1s;
 }
 
 .result {
   text-align: center;
   font-size: 50px;
-  text-shadow: 0px 0px 10px white;
+  text-shadow: 0px 0px 10px black;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -76,7 +116,7 @@ div {
   border-bottom-right-radius: 30px;
   border-top-left-radius: 30px;
   color: white;
-  background-color: rgb(0, 0, 73);
+  background-color: transparent;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 800;
@@ -86,6 +126,7 @@ div {
   border-color: red;
   color: red;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .autoplay-btn {
@@ -97,14 +138,14 @@ div {
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
   color: white;
-  background-color: rgb(0, 0, 73);
+  background-color: transparent;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 800;
 }
 .autoplay-btn:hover {
-  background-color: white;
-  color: black;
+  color: green;
   cursor: pointer;
-  border-color: black;
+  border-color: green;
+  transition: 0.5s;
 }
