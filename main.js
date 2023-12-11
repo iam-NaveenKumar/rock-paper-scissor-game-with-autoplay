@@ -152,9 +152,10 @@ function updatescore() {
     ".score"
   ).innerHTML = `wins : ${score.win} | lose : ${score.lose} | tie : ${score.tie}`;
 }
-var audio = document.getElementById("myAudio");
 
 // audio
+
+var audio = document.getElementById("myAudio");
 
 function toggleSong() {
   if (audio.paused) {
